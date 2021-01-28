@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 
-df = pd.read_csv('./customers.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/albanda/CE888/master/lab2%20-%20bootstrap/customers.csv')
 data = df.values.T[1]
 
 
@@ -82,7 +82,7 @@ plt.show()
 # Note that the current and new fleets are in different columns and have different lengths, so bear this in mind when you're plotting.
 # You can create separate scatterplots for the two fleets, as you would with the histograms, 
 # or plot them both in one plot (but not one against the other).
-df = pd.read_csv('./vehicles.csv')
+df = pd.read_csv('https://github.com/albanda/CE888/raw/master/lab2%20-%20bootstrap/vehicles.csv')
 print(df.columns)
 
 df['idx'] = df.index
